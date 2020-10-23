@@ -50,27 +50,18 @@
 <script>
     "use strict";
 
-    // var myImage = document.getElementById("coffee_image");
-    // var myRevenueMessage = document.getElementById("revenue");
-
-    // myImage.setAttribute("src", "static/coffee_beans.jpg");
-
-    // myImage.addEventListener("click", makeCoffee);
 
     $('#coffee_image').attr('src', 'static/coffee_beans.jpg');
     $('#coffee_image').on('click', makeCoffee);
 
     function makeCoffee() {
-        //  myImage.src = "static/coffee_machine.jpg";
          $('#coffee_image').attr('src', 'static/coffee_machine.jpg');
 
          setTimeout(function() {
-            //  myImage.setAttribute("src", "static/coffee_mug.jpg");
              $('#coffee_image').attr('src', 'static/coffee_mug.jpg');
          }, 1500);
 
          setTimeout(function() {
-            //  myImage.setAttribute("src", "static/coffee_beans.jpg");
              $('#coffee_image').attr('src', 'static/coffee_beans.jpg');
          }, 4000);
     }
